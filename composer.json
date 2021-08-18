@@ -1,5 +1,5 @@
 {
-  "name": "junaidbhura/composer-wp-pro-plugins",
+  "name": "wpkit/composer-wp-pro-plugins",
   "type": "composer-plugin",
   "license": "MIT",
   "require": {
