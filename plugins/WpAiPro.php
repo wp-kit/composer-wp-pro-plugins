@@ -67,7 +67,17 @@ class WpAiPro {
 					$license = '';
 					break;
 				case 'wpai-woocommerce-add-on':
-					$name    = 'WooCommerce Add-On';
+				case 'wpai-woocommerce-add-on-pro':
+					$name    = 'WooCommerce Import Add-On Pro';
+					$license = '';
+					break;
+				case 'wpae-woocommerce-add-on':
+				case 'wpae-woocommerce-add-on-pro':
+					$name    = 'WooCommerce Export Add-On Pro';
+					$license = '';
+					break;
+				case 'wpae-user-add-on':
+					$name    = 'User Export Add-On';
 					$license = '';
 					break;
 				default:
