@@ -45,7 +45,7 @@ class WpAiPro {
 	 * @return string
 	 */
 	public function getDownloadUrl() {
-		if ( 'wp-all-export-pro' === $this->slug || strpos($this->slug, 'wpae-') !== false ) {
+		if ( 'wp-all-export-pro' === $this->slug ) {
 			$license = getenv( 'WP_ALL_EXPORT_PRO_KEY' );
 			$url     = getenv( 'WP_ALL_EXPORT_PRO_URL' );
 			$name    = 'WP All Export';
