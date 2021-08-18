@@ -45,7 +45,7 @@ class WpAiPro {
 	 * @return string
 	 */
 	public function getDownloadUrl() {
-		if ( 'wp-all-export-pro' === $this->slug ) {
+		if ( 'wp-all-export-pro' === $this->slug || strpos($this->slug, 'wpae-') !== false ) {
 			$license = getenv( 'WP_ALL_EXPORT_PRO_KEY' );
 			$url     = getenv( 'WP_ALL_EXPORT_PRO_URL' );
 			$name    = 'WP All Export';
@@ -84,7 +84,6 @@ class WpAiPro {
 					$name = 'WP All Import';
 			}
 		}
-
 		$http     = new Http();
 		$response = json_decode( $http->post( 'https://www.wpallimport.com', array(
 			'edd_action' => 'get_version',
